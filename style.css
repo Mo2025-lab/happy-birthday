@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: black;
+  color: #feda4a;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.star-wars {
+  height: 100vh;
+  perspective: 400px;
+  overflow: hidden;
+}
+
+.crawl {
+  font-size: 350%;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 100vh;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear forwards;
+}
+
+.title p {
+  text-align: center;
+  font-size: 90%;
+  margin: 0;
+}
+
+.title h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 100vh;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% {
+    top: -300vh;
+    transform: rotateX(25deg) translateZ(-300px);
+  }
+}
+
+.cake-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  flex-direction: column;
+}
+
+.cake-container img {
+  max-width: 80%;
+  height: auto;
+}

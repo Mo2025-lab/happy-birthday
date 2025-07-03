@@ -13,19 +13,18 @@ function startCelebration() {
   launchBalloonPop();
   setTimeout(() => {
     const crawl = document.getElementById('crawl-container');
-    crawl.style.visibility = 'visible';
+    crawl.style.visibility = 'visible'; // Show Star Wars crawl after 10 seconds
   }, 10000);
 
   setTimeout(() => {
-    document.getElementById('duck').style.display = 'block';
-    document.getElementById('virtual-cake').style.display = 'flex';
-    document.getElementById('bday-track').currentTime = 60;
-    document.getElementById('bday-track').play();
-  }, 10000);
+    document.getElementById('duck').style.display = 'block'; // Show dancing duck
+    document.getElementById('virtual-cake').style.display = 'flex'; // Show virtual cake
+    document.getElementById('bday-track').currentTime = 60; // Start the audio at 1:00 minute
+    document.getElementById('bday-track').play(); // Play the song
+  }, 10000); // After 10 seconds
 }
 
 // Start on page load
 window.addEventListener('load', () => {
   startCelebration();
 });
-

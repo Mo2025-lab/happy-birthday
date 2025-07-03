@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="star-wars">
+  <!-- Balloons and confetti -->
+  <div id="explosion-container"></div>
+
+  <!-- Star Wars Crawl Content -->
+  <div class="star-wars" id="crawl-container" style="visibility: hidden;">
     <div class="crawl">
       <div class="title">
-        <p>Happy Birthday Happy 27th, You Beautiful, Blazed, Bass-Drop PillowBunz of Chaos ☀️🍃🍸🎶  </p>
+        <p>Happy Birthday... PillowBunz of Chaos ☀️🍃🍸🎶</p>
         <h1>Karen Escalante</h1>
       </div>
       <p>Today, a legend turns 27. Across the galaxy, celebrations erupt.</p>
@@ -21,10 +25,26 @@
       <p>Stay wild, stay toxic (in the fun way), and never apologize for chasing sun, bass, or beautiful brown men with questionable intentions. 💃🏽🍫🔥</p>
     </div>
   </div>
-<div class="cake-container" id="cake">
-  <img src="cake.png" alt="Chocolate Cake with 27 Candles" />
-</div>
-  
+
+  <!-- Duck -->
+  <img src="duck.png" id="duck" alt="Dancing Duck" style="display: none;" />
+
+  <!-- Virtual Cake -->
+  <div id="virtual-cake" style="display: none;">
+    <div class="cake">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="candle"></div>
+      <div class="flame"></div>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bday-track" loop>
+    <source src="popular_mix.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
